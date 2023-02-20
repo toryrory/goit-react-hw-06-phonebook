@@ -11,6 +11,7 @@ export const ContactList = () => {
       name.toLowerCase().includes(filter.toLowerCase())
     );
   };
+  
   return (
     <ul>
       {getFilteredContact().map(({ id, name, number }) => (
